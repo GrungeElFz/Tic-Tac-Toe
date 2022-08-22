@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: lightcyan;
+    background-color: grey;
 
     display: flex;
     flex-direction: column;
@@ -12,6 +12,11 @@ body {
 
 body > h1 {
     text-align: center;
+    color: lightcyan;
+}
+
+#player {
+    color: lightcyan;
 }
 
 #board {
@@ -42,26 +47,28 @@ body > h1 {
     justify-content: center;
 }
 
-.x:hover::after {
+.x-hover:hover::after {
+    color: gray;
     content: 'X';
+    font-size: larger;
 }
 
-.o:hover::after {
+.o-hover:hover::after {
+    color: gray;
     content: 'O';
+    font-size: larger;
 }
 
 #after-match {
-    border: 1px solid red;
-    
     text-align: center;
 
-    width: 10vh;
+    width: 20vh;
     padding: 1vh;
     margin: 1vh;
 }
 
 #after-match-message {
-    /* border: 1px solid red; */
+    color: lightcyan;
 }
 
 #reset-button {
